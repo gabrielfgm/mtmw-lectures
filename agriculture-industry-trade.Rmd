@@ -1,0 +1,95 @@
+---
+title: "Week 3: Agriculture, Industrialization & Global Trade" 
+author: | 
+    | Dr. Gabriel Geisler Mesevage 
+    | gabriel.mesevage@kcl.ac.uk
+date: "Last update: `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  xaringan::moon_reader:
+    nature:
+      beforeInit: "helper_functions/macros.js"
+      ratio: '16:9'
+    lib_dir: libs
+    css: ["xaringan-themer.css", "helper_functions/extra.css"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE,
+                      message = FALSE, fig.align='center', fig.retina=3,
+                      out.width="75%")
+```
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+style_solarized_light()
+source("helper_functions/theme_lecture.R")
+xaringanExtra::use_webcam()
+xaringanExtra::use_tile_view()
+```
+
+
+## Today's Goals
+
+.Large[
+1. The revolution in *agriculture*
+
+  + It predates the industrial revolution
+  + Persists throughout the industrial revolution
+  + Mostly what people do even long after the industrial revolution!
+
+
+2. The impact of the industrial revolution on *global patterns of economic production*
+
+]
+
+---
+
+.Large[
+## Today's Plan
+
+1. The state of agriculture in the 18th century
+2. The form and spread of industrialization
+3. Industrial production in global trade
+4. Global specialization and its consequences
+5. Conclusion: the costs of not industrializing?
+]
+
+---
+
++ Stuff from Federico and Osterhammel
+
+---
+
++ Decline of famines
+
+---
+
++ geographic and ag system range e.g. rice vs wheat
+
+---
+
++ The spread of industrialization
+
+--- 
+
++ Some geographic range
+
+---
+
++ The rise of trade
+
++ Maybe europe and hungry 40s first?
+
+---
+
++ Trade and specialization
+
+---
+
++ Specialization/grain invasion range of geographical and political effects
+
+---
+
++ engels law the question of global development
+
+
