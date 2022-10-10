@@ -8,6 +8,14 @@
     <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
     <link href="libs/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view-0.2.6/tile-view.js"></script>
+    <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+    <script src="libs/d3-3.3.8/d3.min.js"></script>
+    <script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+    <link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+    <script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+    <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+    <script src="libs/chromatography-0.1/chromatography.js"></script>
+    <script src="libs/DiagrammeR-binding-1.0.6.1/DiagrammeR.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="helper_functions/extra.css" type="text/css" />
   </head>
@@ -23,7 +31,7 @@ class: center, middle, inverse, title-slide
 <a href="mailto:gabriel.mesevage@kcl.ac.uk" class="email">gabriel.mesevage@kcl.ac.uk</a></div>
 ]
 .date[
-### Last update: 09 October, 2022
+### Last update: 10 October, 2022
 ]
 
 ---
@@ -37,14 +45,14 @@ class: center, middle, inverse, title-slide
 ## Today's Goals
 
 .Large[
-1. The revolution in *agriculture*
-
++ The revolution in *agriculture*
   + It predates the industrial revolution
   + Persists throughout the industrial revolution
-  + Mostly what people do even long after the industrial revolution!
++ Agriculture is mostly what people do even long after the industrial revolution!
 
+&gt; "The importance of agriculture everywhere ... cannot be overestimated: most countries were still agrarian on the eve of the First World War; the world was still a world of tillers of the soil" (Osterhammel, p. 211).
 
-2. The impact of the industrial revolution on *global patterns of economic production*
++ The impact of the industrial revolution on *global patterns of economic production*
 
 ]
 
@@ -53,7 +61,7 @@ class: center, middle, inverse, title-slide
 .Large[
 ## Today's Plan
 
-1. The state of agriculture in the 18th century
+1. Agriculture across the 19th century
 2. The form and spread of industrialization
 3. Industrial production in global trade
 4. Global specialization and its consequences
@@ -62,42 +70,291 @@ class: center, middle, inverse, title-slide
 
 ---
 
-+ Stuff from Federico and Osterhammel
+## Agriculture as a sector: some basic points
+
+.large[
+1. The environment determines what it is possible to cultivate
+  + Not immutable but constrains where it is economically sensible to grow certain crops
+2. Plants grow by taking nutrients from the soil 
+  + How intensively do you work the soil?
+  + How do you regenerate fertility?
+3. Plants grow in a biologically determined life-cycle:
+  + Planting seasons
+  + Timing is important
+  + Labor demand is often uneven
+4. The environment effects output through weather/pests/disease
+  + Still true: crop yields fluctuate annually based on these factors
+  + E.g. 'rust' removes 5/10% of wheat crop each year in 19th c.
+]
+---
+
+## Thinking about agriculture's challenges
+
+&lt;img src="agriculture-industry-trade_files/figure-html/unnamed-chunk-1-1.png" width="75%" style="display: block; margin: auto;" /&gt;
 
 ---
 
-+ Decline of famines
+## How to feed more people
+
+.Large[
+1. Use more labor
+  + But "For industrialization to occur, it had to be possible to produce more food with fewer people." (Dennison and Simpson, 2010)
+2. Use more land
+3. Use more capital (tools, fertilizer, infrastructure, etc.)
+4. Get better at it... (Productivity gains)
+]
 
 ---
 
-+ geographic and ag system range e.g. rice vs wheat
+.Large.left-column[
+## The agricultural labor force
+
++ The biggest source of global employment in 1800
+]
+
+.right-column[
+&lt;img src="agriculture-industry-trade_files/figure-html/unnamed-chunk-2-1.png" width="75%" style="display: block; margin: auto;" /&gt;
+]
 
 ---
 
-+ The spread of industrialization
+.large.left-column[
+## The growing use of land
 
---- 
++ increases everywhere except Western Europe
 
-+ Some geographic range
+]
 
----
-
-+ The rise of trade
-
-+ Maybe europe and hungry 40s first?
-
----
-
-+ Trade and specialization
+.right-column[
+&lt;img src="agriculture-industry-trade_files/figure-html/unnamed-chunk-3-1.png" width="75%" style="display: block; margin: auto;" /&gt;
+]
 
 ---
 
-+ Specialization/grain invasion range of geographical and political effects
+.Large.pull-left[
+## Agricultural capital
+
+1. Land improvement (fencing, terracing, etc)
+2. Buildings (stables e.g.)
+3. Tools and machines
+4. Livestock (who pulls the plow?)
+5. Working capital (animal feed, existing stocks)
+]
+
+.Large.pull-right[
++ Difficult to measure!
++ Except maybe land-improvement along 'frontiers'
++ Almost certainly grew in 1850-1910 period -- but don't exagerate technological change!
+
+&gt; "In 1950 horses still accounted for 85 percent of traction in European agriculture" (Osterhammel, p. 213).
+]
 
 ---
 
-+ engels law the question of global development
+## Agricultural revolutions
 
+.Large[
++ The term is debated
+  - Usually we mean growth in *agricultural productivity* in yields/hectare or yields/worker
++ By this metric a story of late-18th c. England
+  - In 1800 English ag. laborer produces ~2X Russian laborer
+  - **Not** a general European story
+  - Rice cultivation among most-productive since about 12th century on a **per hectare** basis
+    + Uses a lot of labor
++ Much of the agricultural revolution model in wheat would not work in rice
+  - No land to open up, labor use very intensive, little scope for economies of scale
+]
+
+---
+
+.large.pull-left[
+## Agriculture and famine
+
++ The escape from famine happens at different times in different parts of the world
+  - The Americas possibly first
+  - Eastern and Western edges of Eurasia after 1850
+  - Elsewhere much later
++ Famines of 19th c. are **catastrophic**
+  - 1870s and 1890s in India/China: excess mortality estimated at 31-59 million!!
++ Growth in food markets seem on average to help (supply chases prices) but sometimes to hurt e.g. India in 1870s.
+]
+
+.pull-right[
+![:scale 100%](figures/610px-Famine_in_India_Natives_Waiting_for_Relief_in_Bangalore.jpg)
+]
+
+---
+
+## Summing up
+
+.pull-left.large[
+
++ There are real productivity gains but extensive growth is key
+
+&gt; "The great gains of the nineteenth century came rather from the extensive growth of production in frontier areas of the Tsarist Empire, the United States, Argentina, and Canada, as well as in India" (Osterhammel, p. 215)
+]
+
+.pull-right.large[
++ Agriculture becomes more *capitalist*:
+  - Wage labor intensive
+  - Export oriented
+  - Controlled by large and politically influential operators
++ The politics of agricultural decline in Europe, and its rise elsewhere are important to the later 19th c.
+]
+
+---
+
+.large[
+### Industrialization
+
++ Starts in Britain.
++ Many theories as to why: Coal, institutions, wages, colonies, etc.
+
+]
+.center[
+![:scale 90%](figures/Allen-dist-world-manuf.png)
+]
+
+---
+
+## The spread of industrialization
+
+.large.pull-left[
+&gt; "Britain’s initial lead over continental Europe should not be exaggerated. Celebrated British inventions soon spread abroad, and by 1851 it was clear to everyone drifting through the marvels of the Crystal Palace that the United States had overtaken Britain in machine-building technology" (Osterhammel, 664).
+]
+
+.large.pull-right[
++ The question of the 'Great Divergence' (between European/Western and non-European/Western living standards)
+  - Since 2000s has been pushed towards 19th c. and associated more strongly with industrialization
+  - Timing the divergence remains an active field, but strong case for the IR as the driving force
+]
+---
+
+## Features of industrialization
+
+.Large[
++ Concentrated mostly in existing product categories and forms of production
+  - Much industrialization before factory work became the norm
++ Particularly applied in **textiles**, **metallurgy**, and **transport**
+  - The inputs of textiles are agricultural goods
+  - Metallurgy e.g. steel-making with coal power crucial in breaking link between agricultural sector and industrial growth
+  - Transport includes railways and steamships
+]
+
+---
+
+## The consequences of industrialization
+
+.Large[
+1. Strengthens military advantages of industrializers
+  + Facilitates colonization
+2. The transport revolution facilitates long-distance trade -- particularly over land
+3. Geographic variation in production pushes for global specialization
+
+.center[**Railroads, steamships and colonialism also drive trade, making the system self-reinforcing**]
+]
+---
+
+&lt;img src="agriculture-industry-trade_files/figure-html/merch-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+---
+
+### Who trades what? Heckscher-Ohlin effects
+
+.pull-left[
+#### Land Abundant Exporters
+
+Factors   |  Technology  |  Exports
+<div id="htmlwidget-b02192d1c8f0fda44eb3" style="width:75%;height:504px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b02192d1c8f0fda44eb3">{"x":{"diagram":"\ngraph LR\nA((Abundant Land)) --> D[Production<br>Process]\nB((Labor)) --> D\nC((Capital)) --> D\nD --> E((Agri.<br>Produce))"},"evals":[],"jsHooks":[]}</script>
+]
+
+.pull-right[
+#### Labor Abundant Exporters
+Factors   |  Technology  |  Exports
+<div id="htmlwidget-06013099197b7ee5153c" style="width:75%;height:504px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-06013099197b7ee5153c">{"x":{"diagram":"\ngraph LR\nA((Land)) --> D[Production<br>Process]\nB((Abundant Labor)) --> D\nC((Capital)) --> D\nD --> E((Manuf.<br>goods))"},"evals":[],"jsHooks":[]}</script>
+]
+
+---
+
+### The consequences of global commodity trade
+
+.pull-left[
+![:scale 100%](figures/anglo_us_wheat.png)]
+
+.pull-right[
+![:scale 100%](figures/harley_freight_rates.png)]
+
+---
+
+.left-column[
+## Railroads drive down overland transport costs
+
++ Steamships are late innovations
++ Railroads reduce costs of moving goods from interiors to coasts
+]
+.right-column[
+![:scale 90%](figures/us_waterways_railways.png)]
+
+---
+
+## Consequences of commodity price convergence
+
+.large[
++ Factors of production are forced into competition
+    - Argentinian farmers vs French farmers, etc. 
++ Places with abundant land can produce grain more cheaply
+    - Convergence in global grain prices drives farmers in land-scarce regions out of the market!
+    - High wages in settler colonies (Argentina, Australia, Canada...) push European real wages up!
+    
+&gt; "Less frequently remarked upon, but equally obvious, are the long-run implications [of the Americas] for European income distribution. Such an increase in land endowments would inevitably spell disaster for European landowners. Over-all living standards might increase, but in the long run European rents would decline, with European labor or capital benefitting." &lt;br&gt; -O'Rourke, "European Grain Invasion", p. 775
+]
+---
+
+&lt;img src="agriculture-industry-trade_files/figure-html/uk_factors-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;img src="agriculture-industry-trade_files/figure-html/wage_rent_ratios-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Summing up
+
+.center.Large[
+&gt; "Over the course of the nineteenth century, transoceanic trade in bulk commodities such as grains, metals, and textiles became more and more common. One implication was that long-distance trade now began to displace domestic producers in large numbers, be they Indian textile producers or European farmers. European land found itself in direct competition with the vast and fertile land endowments of the New World, while Indian weavers found themselves outcompeted by European technology and capital" (Findlay and O'Rourke, p. 385).
+]
+
+---
+
+## Conclusion: the legacies of specialization
+
+.large[
++ Around 1800 British merchants selling manufactured textiles to West Africa are selling mostly **Indian** manufactured goods
+  - This changes decisively by 1820
++ Industrialization generates a **global division of labor** between places that specialize in primary goods and those that specialize in manufactures
+
+&gt; "Broadly speaking, however, it is not inaccurate to view world trade in the nineteenth century in North–South terms, with the rich and industrialized North exporting industrial goods in return for the primary exports of the poor and agricultural South. This was certainly truer in the late nineteenth century than it had been before, and truer than it has been since World War II as well" (Findlay &amp; O'Rourke, 413-414).
+
++ Areas of western settlement (US, Can., Arg., Aus.) exceptions
+]
+
+---
+
+## Conclusion: the legacies of specialization
+
+.large[
++ The 19th c. is when the largest divergence of living standards emerges globally
+
+&gt; "...the period 1880-1913 has to be regarded as one in which many tropical countries grew as rapidly as many of the industrial countries" (Arthur Lewis, in Findlay and O'Rourke, p. 415)
+
++ **Pessimistic view**: global specialization de-industrialized the global south, forcing them into concentration on primary products
+  - Primary products de-industrialize via **Dutch disease**
+  - The instability of the **commodity lottery**
++ **Optimistic view**: Northern industrialization was an 'engine of growth' which provided demand for southern products as well as loans
+  - The Lewis developmental model with "unlimited supplies of labor"
++ Does **Engel's Law** doom them in the long-run?
+]
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
